@@ -17,5 +17,4 @@ Just write all the products you eat with their weight and calorific value and th
 * Room database
 * RxJava
 
-![Screenshot](images/meals.png)
-![Screenshot](images/meal_1.png)
+![Screenshot](images/2screens.png)
