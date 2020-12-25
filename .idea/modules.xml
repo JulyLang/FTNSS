@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/FTNSS.iml" filepath="$PROJECT_DIR$/.idea/FTNSS.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/FTNSS.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/FTNSS.app.iml" />
     </modules>
   </component>
 </project>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white"
+    tools:context=".presentation.MealDetailsFragment">
+
+
+    <TextView
+        android:id="@+id/meal1title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:textSize="30sp"
+        android:text="Meal 1 calories" />
+
+
+    <GridLayout
+        android:id="@+id/table"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:useDefaultMargins="true">
+
+        <TextView
+            android:id="@+id/product1Name"
+            android:textSize="18sp"
+            android:text="Product" />
+
+        <TextView
+            android:id="@+id/product1Weight"
+            android:textSize="18sp"
+            android:text="Weight, g" />
+
+        <TextView
+            android:id="@+id/product1KcalPer100G"
+            android:textSize="18sp"
+            android:text="Kcal/100g" />
+
+        <TextView
+            android:id="@+id/product1KcalTotalTextView"
+            android:textSize="18sp"
+            android:text="Total, Kcal" />
+
+
+        <EditText
+            android:id="@+id/product1NameEditText"
+            android:ems="4"
+            android:textSize="16sp"
+            android:text="Product" />
+
+        <EditText
+            android:id="@+id/product1WeightEditText"
+            android:ems="4"
+            android:inputType="numberSigned"
+            android:maxLength="4"
+            android:textSize="16sp"
+            android:text="0" />
+
+        <EditText
+            android:id="@+id/product1KcalPer100GEditText"
+            android:ems="4"
+            android:inputType="numberSigned"
+            android:maxLength="4"
+            android:textSize="16sp"
+            android:text="0" />
+
+        <TextView
+            android:id="@+id/product1KcalTotalCount"
+            android:ems="4"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:text="0" />
+
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/plus_button"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:layout_gravity="center"
+        android:paddingLeft="16dp"
+        android:paddingTop="8dp"
+        android:paddingRight="16dp"
+        android:paddingBottom="8dp"
+        android:background="@drawable/round_button"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/totalKcalTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:textSize="18sp"
+            android:text="Total Meal Kcal: " />
+
+        <TextView
+            android:id="@+id/mealTotalCount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingLeft="16dp"
+            android:paddingTop="8dp"
+            android:paddingRight="16dp"
+            android:paddingBottom="8dp"
+            android:textSize="18sp"
+            android:text="0" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

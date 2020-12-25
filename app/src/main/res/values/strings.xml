@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">FTNSS</string>
+    <string name="day_kcal">Your day calories</string>
+    <string name="plus_sign" translatable="false">+</string>
+    <string name="total_calories">Total calories: </string>
+    <string name="init_total__calories_value" translatable="false">0</string>
+</resources>
