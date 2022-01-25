@@ -141,6 +141,7 @@ public class MealDetailsFragment extends Fragment implements ITotalMealListener 
         mealsLayout.addView(kcal);
 
         TextView totalKcal = new TextView(getContext());
+        totalKcal.setTag("product" + productCounter + "totalKcal");
         totalKcal.setText("0");
         totalKcal.setTextColor(Color.BLACK);
         totalKcal.setTextSize(16);
@@ -158,8 +159,16 @@ public class MealDetailsFragment extends Fragment implements ITotalMealListener 
     public void onTotalChanged() {
         // Calculates and sets Total Meal Kcal field
         TextView product1KcalTotalCount = getView().findViewById(R.id.product1KcalTotalCount);
-        String product1 = product1KcalTotalCount.getText().toString();
+        int mealTotal = 0;
+        for (int counter = 1; counter<productCounter + 1; counter++){
+            TextView currentProductTotalView = ((ViewGroup)getView()).findViewWithTag("product" + counter + "totalKcal");
+            if (currentProductTotalView != null) {
+                mealTotal += Integer.valueOf(currentProductTotalView.getText().toString());
+            }
+
+        };
+       // String product1 = product1KcalTotalCount.getText().toString();
         TextView mealTotalCount = getView().findViewById(R.id.mealTotalCount);
-        mealTotalCount.setText(product1);
+        mealTotalCount.setText(mealTotal + "");
     }
 }

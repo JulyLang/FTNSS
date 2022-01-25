@@ -5,6 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:background="@android:color/white"
+    android:clickable="true"
     tools:context=".presentation.MealDetailsFragment">
 
 
@@ -82,7 +83,8 @@
             android:ems="4"
             android:textSize="16sp"
             android:textColor="@android:color/black"
-            android:text="0" />
+            android:text="0"
+            android:tag="product1totalKcal" />
 
 
     </GridLayout>
